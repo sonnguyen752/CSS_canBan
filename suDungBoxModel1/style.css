@@ -1,0 +1,18 @@
+div{
+    border: 20px solid rgb(46, 226, 76);
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    vertical-align: middle;
+  
+}
+p{
+    color: blue;
+    font-weight: bold;
+    background-color: aqua;
+    /* border: 1px solid black; */
+    /* padding:20px; */
+    margin-top: 30%;
+}
