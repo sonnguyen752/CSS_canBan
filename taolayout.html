@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tao layout voi html, css</title>
+    <style>
+        .backgroud-gray{
+            background-color: gray;
+            width: 100%;
+        }
+        .backgroud-black{
+            color: white;
+            background-color: black;
+            width: 100%;
+            height: 5%;
+        }
+        .fixed{
+            width: 100%;
+            position: fixed;
+            top:0
+        }
+        h1, h3, h4{
+            font-family:Arial ;
+        }
+       nav ul li{
+            display: inline;
+            padding: 0.5em 1em;
+
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        ul{
+            list-style-type: none;
+            display: inline;
+            margin-left: 40%;
+        }
+        .section{
+            margin-top:8em;
+            width: 75%;
+        }
+        .text-center{
+            text-align: center;
+        }
+        aside{
+            background-color: aquamarine;
+            width: 20%;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="fixed">
+    <header class="header backgroud-black text-center"><h1>Monday Times</h1>
+    </header>
+        <nav class="navbar ">
+        <ul class="link backgroud-gray" >
+            <li><a href="#">News</a></li>
+            <li><a href="#">Sport</a></li>
+            <li><a href="#">Weather</a></li>
+        </ul>      
+    </nav>
+    </div>
+    <section class="section">
+        <h3 class="text-center">News Section</h3>
+        <div>
+            <h4 class="text-center">NewsArticle</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in porta lorem. Morbi condimentum est nibh, et consectetur tortor feugiat at.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in porta lorem. Morbi condimentum est nibh, et consectetur tortor feugiat at.</p>
+        </div>
+        <article class="backgroud-gray">
+            <h4 class="text-center">News Article</h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in porta lorem. Morbi condimentum est nibh, et consectetur tortor feugiat at.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in porta lorem. Morbi condimentum est nibh, et consectetur tortor feugiat at.
+            </p>
+        </article>
+    </section>
+   
+   <footer class="footer backgroud-black text-center">
+        <p>@ 2014 Monday Times. All rights reserved</p>
+    </footer>
+</body>
+</html>
