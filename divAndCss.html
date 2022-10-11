@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tao bo cuc voi div va css</title>
+    <style>
+        body{
+            margin:5px;
+        }
+        .header{
+            width: 100%;
+            background-color: rgb(21, 74, 121);
+            height: 48px;
+        }
+        .nav li{
+            list-style-type: none;
+            color: antiquewhite;
+            text-align: center;
+            text-decoration: none; 
+            cursor: pointer;
+            padding: 15px 20px;
+        }
+        .nav> li{      
+            display: inline-block;
+        }
+        .right{
+            float: right;
+        }
+        li:hover{
+            background-color: rgb(1, 12, 12);
+        }
+        ul .nav-child{
+            /* background: aqua; */
+            position: absolute;
+            top: 48px;
+            left:100px;
+            visibility: hidden;
+        }
+        ul li:hover .nav-child{
+            visibility: visible;        
+        }
+        main{
+            clear: both;
+            text-align: center;
+        }
+        
+        .footer{
+            clear: both;
+            text-align: center;
+            background-color: aqua;
+            padding: 15px 20px;
+        }
+        .col-3{width: 24%;}
+        .col-6{width: 50%;}
+        .col-9{width: 75%;}
+        .col-12{width: 100%;}
+        @media only screen and (max-width:768px){
+            [class*="col-"]{
+            width: 100%;;
+            }
+            .main-right{
+                display: none;
+            }
+            .nav-child li{
+                color: red;
+            }
+        }
+        @media only screen and (min-width:768px){
+        [class*="col-"]{
+            float: left;
+        } 
+        }
+        
+       
+    </style>
+</head>
+<body>
+    <header class="header">
+        <ul class="nav" >
+            <li ><a href="#"></a> Logo</li>
+            <li class="nav-parent"> <a href="#"></a>  Home
+                <ul class=" nav-child">
+                    <li> <a href="#"></a> link1</li>
+                    <li> <a href="#"></a> link2</li>
+                    <li> <a href="#"></a> link3</li>
+                </ul>
+            </li>
+            <li ><a href="#"></a> About</li>
+            <li ><a href="#"></a> Project</li>
+            <li ><a href="#"></a> Contect</li>
+            <li class="right"><a href="#"></a> Login</li>
+        </ul>
+    </header>
+    <main>
+        <section class="main-left col-3 border ">
+            <div>
+                <p>cai gi o day</p>
+            </div>
+        </section>
+        <section class="main col-6 border ">
+            <h1>Welcome</h1>
+            <div class="main main-fisrt">
+                <p>
+                bai taphien thi o day
+                </p>
+            </div>
+            <div class="main main-last">
+                <h2>Test</h2>
+                <p>
+                    bai tap hien thi o day va o day
+                </p>
+            </div>
+    </section>
+    <section class="main-right col-3 border ">
+        <div class="border">ads1</div>
+        <div class="border">ads2</div>
+    </section>
+    </main>
+    
+    <footer class="footer ">
+        my footer
+    </footer>
+</body>
+</html>
