@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai tap tao gallery don gian</title>
+    <style>
+        p{
+            text-align: center;
+        }
+       
+        .col-3{width:25%;}
+        .col-5{width: 50%;}
+        .col-12{width: 100%;}
+        [class*=col-]{
+            float: left;
+        } 
+       
+        @media only screen and (min-width: 700px){
+            .col-3{ width: 25%;}
+            /* .col-5{width:50%}
+            .col-12{width: 100%;} */
+        }
+        @media only screen and (max-width: 700px){
+            /* .col-3{ width: 25%;} */
+            .col-5{width:50%}
+            /* .col-12{width: 100%;} */
+        }
+        @media only screen and (max-width: 500px){
+            /* .col-3{ width: 25%;}
+            .col-5{width:50%} */
+            .col-12{width: 100%;}
+        }
+    </style>
+</head>
+<body>
+    <h3>Reponsive Image Gallery</h3>
+    <h3>Resize the browser window to see the effect</h3>
+    <div class="content">
+        <div class="col-3 col-5 col-12">
+            <img src="5.jpg" alt="">
+            <p>Add a description of the image here</p>
+        </div>
+        <div class="col-3  col-5 col-12">
+            <img src="5.jpg" alt="">
+            <p>Add a description of the image here</p>
+        </div>
+        <div class="col-3  col-5 col-12">
+            <img src="5.jpg" alt="">
+            <p>Add a description of the image here</p>
+        </div>
+        <div class="col-3  col-5 col-12">
+            <img src="5.jpg" alt="">
+            <p>Add a description of the image here</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>doan van ban phia duoi cung</p> 
+    </div>
+</body>
+</html>
